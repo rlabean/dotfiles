@@ -15,8 +15,8 @@ vim +PluginInstall +qall
 
 wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 
-gzip -d install-tl-unx.tar.gz
+gzip -d $(find -name install-tl-unx.tar.gz -type f)
 
-sudo chmod +x install-tl-unx.tar.gz
+sudo chmod +x $(find -name install-tl-unx.tar.gz -type f)
 
-./install-tl-unx.tar.gz
+./$(find -name install-tl-unx.tar.gz -type f)/
