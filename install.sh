@@ -17,6 +17,6 @@ wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 
 gzip -d $(find -name install-tl-unx.tar.gz -type f)
 
-sudo chmod +x $(find -name install-tl-* -type f)
+chmod +x $(find -name install-tl-unx.tar.gz -type f)
 
-./$(find -name install-tl-* -type f)/
+./$(find -name install-tl-unx.tar.gz -type f)
